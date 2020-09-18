@@ -1,0 +1,177 @@
+body {
+    background-color: #c9ebe2;
+    text-align: center;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+hr {
+    border-top-color: #b9e2f5;
+    width: 5%;
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 5px;
+}
+
+.top-container {
+    background-color: #e0ebe8;
+    position: relative;
+    font-family: 'Caveat', 'comic sans ms', cursive, 'sans-serif';
+}
+
+.middle-container {
+    background-color: #c9ebe2;
+}
+
+.bottom-container {
+    background-color: #c9ebe2;
+}
+
+.topcloud {
+    position: absolute;
+    right: 30%;
+    top: 5%;
+    max-width: 15%;
+}
+
+.middlecloud {
+    position: absolute;
+    right: 150px;
+    top: 225px;
+}
+
+.bottomcloud {
+    position: absolute;
+    bottom: 315px;
+}
+
+.lastcloud {
+    position: absolute;
+    left: 30px;
+    top: 300px;
+}
+
+.mountain {
+    max-width: 45%;
+}
+
+.skills-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.web-des {
+    width: 9%;
+    float: left;
+    margin-right: 10px;
+}
+
+.web-dev {
+    width: 22%;
+    float: left;
+    margin-right: 30px;
+}
+
+.photography {
+    width: 20%;
+    float: right;
+}
+
+#form-table {
+    margin: 0 auto;
+}
+
+#btn {
+    margin: 0 auto;
+}
+
+#name {
+    margin: 0;
+    padding-top: 100px;
+    font-size: 5.265rem;
+}
+
+#subheading {
+    font-size: 2rem;
+}
+
+#iconfooter {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    background-color: #a9d3c8;
+    z-index: -1;
+}
+
+
+/* Social Media Handle Icons */
+
+.icons {
+    width: 38px;
+    height: 38px;
+    margin: 10px auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.icons::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(100%, 100%);
+    transition: all .4s;
+    background: linear-gradient(to right, #6bcfc7, #a3da3c);
+}
+
+.icons:hover::before {
+    transform: translate(0);
+    animation: anim 0.4s ease-in-out;
+}
+
+@keyframes anim {
+    0%,
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+    50% {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+
+/* Contact Me Button */
+
+.btn {
+    width: 120px;
+    height: 35px;
+    font-size: 15px;
+    background: #c9ebec;
+    border: none;
+    cursor: pointer;
+    color: #323232;
+    border-radius: 5%;
+    transition: all 0.6s;
+    box-shadow: 10px 10px 35px #bbd4ce, -10px -10px 35px #a6cfc4;
+    margin: 30px auto;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #86d6c9;
+}
